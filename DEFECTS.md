@@ -1,6 +1,6 @@
 ﻿# Defects Report
 
-## 2. Registration fails even with valid data due to reCAPTCHA requirement
+## 1. Registration fails even with valid data due to reCAPTCHA requirement
 
 ### Steps to Reproduce:
 
@@ -42,7 +42,7 @@ This issue prevents users from completing the registration process, directly imp
 ### Notes:
 
 The system enforces reCAPTCHA validation but does not provide proper guidance or fallback, which may cause confusion for users and block valid registrations.
-## 3. "More" tab is not selectable or does not respond to user interaction
+## 2. "More" tab is not selectable or does not respond to user interaction
 
 ### Steps to Reproduce:
 

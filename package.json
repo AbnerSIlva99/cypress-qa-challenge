@@ -1,0 +1,14 @@
+{
+  "name": "cypress-qa-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estrutura base para desafio de automacao web com Cypress",
+  "scripts": {
+    "test": "npm run test:headless",
+    "test:headless": "cypress run",
+    "test:headed": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^15.13.1"
+  }
+}

@@ -1,0 +1,4 @@
+﻿{
+  "invalidEmails": ["plainaddress", "missing-at.com", "name@"],
+  "emptyRequired": ["firstName", "lastName", "email"]
+}

@@ -1,24 +1,41 @@
-﻿# DEFECTS
+# 🐞 Defects Report
 
-## DEFECT-001: Practice Form accepts invalid email
+## 1. CAPTCHA validation fails even with correct input
 
-- Title: Invalid email accepted on form submission
-- Area: Forms
-- Severity: Major
-- Priority: High
-- Justification: A primary flow accepts invalid data and impacts data integrity.
+### Steps to Reproduce:
 
-### Steps to Reproduce
-1. Open `https://demoqa.com/automation-practice-form`
-2. Fill required fields with valid data
-3. Enter `invalid-email` in the email field
-4. Click Submit
+1. Navigate to https://toolsqa.com/selenium-training/#enroll-form
+2. Fill all required fields with valid data
+3. Enter the CAPTCHA code displayed on the screen
+4. Click on the "SEND" button
 
-### Expected Result
-The system should block submission and display a validation message.
+### Expected Result:
 
-### Actual Result
-The form is submitted without validating email format.
+The form should be successfully submitted when a valid CAPTCHA is entered.
 
-### Evidence
-Optional: attach screenshot/video/execution link.
+### Actual Result:
+
+An error message is displayed:
+**"Sorry! Unable to verify that you are human."**
+
+### Severity:
+
+High
+
+### Priority:
+
+High
+
+### Impact:
+
+This issue blocks users from completing the registration process, directly affecting user experience and potential conversions.
+
+### Evidence:
+
+Screenshot demonstrating the issue:
+
+![CAPTCHA Bug](./screenshots/captcha-error.png)
+
+### Notes:
+
+The CAPTCHA validation appears to be unreliable or incorrectly implemented, preventing valid submissions.

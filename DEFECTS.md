@@ -1,31 +1,44 @@
 ﻿# Defects Report
 
-## 1. CAPTCHA validation fails even with correct input
+## 2. Registration fails even with valid data due to reCAPTCHA requirement
 
-### Steps to Reproduce
-1. Navigate to `https://toolsqa.com/selenium-training/#enroll-form`
-2. Fill all required fields with valid data
-3. Enter the CAPTCHA code displayed on the screen
-4. Click the `SEND` button
+### Steps to Reproduce:
 
-### Expected Result
-The form should be successfully submitted when a valid CAPTCHA is entered.
+1. Navigate to https://demoqa.com/register
+2. Fill all required fields with valid data:
 
-### Actual Result
+   * First Name
+   * Last Name
+   * Username
+   * Password (meeting all requirements)
+3. Click on "Register"
+
+### Expected Result:
+
+The user should be successfully registered when all required fields are filled with valid data.
+
+### Actual Result:
+
 An error message is displayed:
-`Sorry! Unable to verify that you are human.`
+**"Please verify reCaptcha to register!"**
+The registration is blocked even though all form fields are valid.
 
-### Severity
+### Severity:
+
 High
 
-### Priority
+### Priority:
+
 High
 
-### Impact
-This issue blocks users from completing the registration process, directly affecting user experience and potential conversions.
+### Impact:
 
-### Evidence
-![CAPTCHA Bug](./screenshots/captcha-error.png)
+This issue prevents users from completing the registration process, directly impacting usability and blocking access to the system.
 
-### Notes
-The CAPTCHA validation appears to be unreliable or incorrectly implemented, preventing valid submissions.
+### Evidence:
+
+![Registration Error](./screenshots/registration-error.png)
+
+### Notes:
+
+The system enforces reCAPTCHA validation but does not provide proper guidance or fallback, which may cause confusion for users and block valid registrations.

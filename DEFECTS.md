@@ -156,7 +156,7 @@ Screenshot file: **slider-no-functional-impact.png**
 ### Notes:
 
 The slider appears to be implemented only for demonstration purposes and lacks integration with any functional behavior.
-## 6. "No" radio button is not selectable
+## 5. "No" radio button is not selectable
 
 ### Steps to Reproduce:
 

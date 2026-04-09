@@ -1,7 +1,7 @@
-﻿// Objetivo: validar abertura, fechamento e conteudo de modais.
+﻿// Goal: validate modal open, close, and displayed content.
 
 describe("Modals - Content", () => {
-  it("deve exibir conteudo esperado no modal", () => {
-    // TODO: implementar
+  it("should display expected content in the modal", () => {
+    // TODO: implement
   });
 });

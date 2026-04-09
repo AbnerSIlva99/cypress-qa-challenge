@@ -1,6 +1,6 @@
-﻿// Exemplo de area para comandos customizados reutilizaveis.
-// Implemente aqui apenas comandos que reduzem duplicacao real.
+﻿// Place reusable custom commands here.
+// Implement commands only when they remove real duplication.
 
 // Cypress.Commands.add("fillRequiredPracticeForm", (userData) => {
-//   // TODO: implementar de forma autoral
+//   // TODO: implement with original authored code
 // });

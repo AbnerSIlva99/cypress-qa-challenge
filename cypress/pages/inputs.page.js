@@ -2,8 +2,8 @@
 
 export class InputsPage extends BasePage {
   selectors = {
-    // TODO: mapear seletores robustos
+    // TODO: map robust selectors
   };
 
-  // TODO: criar metodos para input valido/invalido e validacoes.
+  // TODO: add methods for valid/invalid inputs and assertions.
 }

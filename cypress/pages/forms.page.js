@@ -2,12 +2,12 @@
 
 export class FormsPage extends BasePage {
   selectors = {
-    // TODO: mapear seletores robustos
+    // TODO: map robust selectors
   };
 
   openPracticeForm() {
     this.visit("/automation-practice-form");
   }
 
-  // TODO: criar metodos de acao e validacao orientados ao dominio.
+  // TODO: add domain-oriented action and assertion methods.
 }

@@ -1,7 +1,7 @@
-﻿// Objetivo: cobrir limites min/max e off-by-one.
+﻿// Goal: cover min/max and off-by-one boundaries.
 
 describe("Inputs - Boundary", () => {
-  it("deve validar limites de tamanho/valor", () => {
-    // TODO: implementar
+  it("should validate size/value limits", () => {
+    // TODO: implement
   });
 });

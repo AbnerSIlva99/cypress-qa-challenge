@@ -1,11 +1,11 @@
-﻿// Objetivo: cobrir validacoes e casos de borda.
+﻿// Goal: cover validations and edge cases.
 
 describe("Forms - Practice Form (Negative)", () => {
-  it("deve impedir envio com campos obrigatorios vazios", () => {
-    // TODO: implementar validacoes sem hard wait
+  it("should block submission when required fields are empty", () => {
+    // TODO: implement validations without hard waits
   });
 
-  it("deve exibir erro para e-mail invalido", () => {
-    // TODO: implementar validacao de formato
+  it("should show an error for invalid email", () => {
+    // TODO: implement email format validation
   });
 });

@@ -1,8 +1,8 @@
-﻿// Use este arquivo para construir massas dinamicas de dados.
-// Evite hardcode repetido em specs.
+﻿// Use this file to build dynamic test data.
+// Avoid repeating hardcoded data in specs.
 
 export const buildValidUser = () => {
   return {
-    // TODO: implementar dados autorais
+    // TODO: implement authored test data
   };
 };

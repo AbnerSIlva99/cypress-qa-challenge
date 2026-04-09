@@ -1,33 +1,33 @@
 ﻿# Cypress Web QA Challenge
 
-## Regra Inegociavel
-Todo codigo da submissao final deve ser autoral do desenvolvedor.
-Nao use codigo pronto gerado por IA como entrega final.
+## Non-Negotiable Rule
+All final submission code must be authored by the developer.
+Do not submit ready-to-use AI-generated code as the final delivery.
 
-## Descricao do Projeto
-Projeto de automacao web com Cypress para validar fluxos de:
+## Project Description
+Web automation project with Cypress to validate flows for:
 - Forms
 - Inputs
 - Alerts / Modals
 
-Aplicacao sob teste: https://demoqa.com/
+Application under test: https://demoqa.com/
 
-## Pre-requisitos
+## Prerequisites
 - Node.js LTS
 - npm
-- Navegador Chromium instalado
+- Chromium-based browser
 
-## Instalacao
-1. Instale dependencias:
+## Installation
+1. Install dependencies:
    ```bash
    npm install
    ```
-2. Valide a instalacao do Cypress:
+2. Validate Cypress installation:
    ```bash
    npx cypress --version
    ```
 
-## Execucao dos Testes
+## Test Execution
 - Headless:
   ```bash
   npm run test:headless
@@ -36,26 +36,26 @@ Aplicacao sob teste: https://demoqa.com/
   ```bash
   npm run test:headed
   ```
-- Comando unico padrao:
+- Single default command:
   ```bash
   npm test
   ```
 
-## Como Ver Resultados
-- Terminal: status de execucao por spec
-- Evidencias locais:
+## How to View Results
+- Terminal: execution status per spec
+- Local artifacts:
   - `cypress/screenshots`
   - `cypress/videos`
 
-## Estrutura e Convencoes
-- `cypress/e2e`: specs por funcionalidade
+## Structure and Conventions
+- `cypress/e2e`: specs organized by feature
 - `cypress/pages`: Page Object Model
-- `cypress/fixtures`: dados de teste
-- `cypress/support`: comandos customizados e utilitarios
+- `cypress/fixtures`: test data
+- `cypress/support`: custom commands and utilities
 
-## Padroes de Qualidade Obrigatorios
-- POM obrigatorio
-- Seletores robustos (evitar CSS fragil)
-- DRY e reuso de codigo
-- Sem hard wait (`cy.wait` fixo)
-- Priorizar qualidade sobre quantidade
+## Mandatory Quality Standards
+- POM is required
+- Use robust selectors (avoid fragile CSS paths)
+- DRY and code reuse
+- No hard waits (`cy.wait` with fixed time)
+- Prioritize quality over quantity

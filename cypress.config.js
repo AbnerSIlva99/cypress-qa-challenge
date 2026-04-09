@@ -8,7 +8,7 @@ module.exports = defineConfig({
     video: true,
     screenshotOnRunFailure: true,
     setupNodeEvents(on, config) {
-      // Adicione plugins e listeners de eventos quando necessario.
+      // Add plugins and event listeners here when needed.
       return config;
     }
   }

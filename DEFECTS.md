@@ -1,24 +1,24 @@
 ﻿# DEFECTS
 
-## DEFECT-001: Practice Form aceita e-mail invalido
+## DEFECT-001: Practice Form accepts invalid email
 
-- Titulo: E-mail invalido aceito no envio do formulario
+- Title: Invalid email accepted on form submission
 - Area: Forms
-- Severidade: Major
-- Prioridade: Alta
-- Justificativa: Fluxo principal aceita dado invalido e compromete integridade.
+- Severity: Major
+- Priority: High
+- Justification: A primary flow accepts invalid data and impacts data integrity.
 
-### Passos para Reproduzir
-1. Acessar `https://demoqa.com/automation-practice-form`
-2. Preencher campos obrigatorios validos
-3. Informar `email-invalido` no campo de e-mail
-4. Clicar em Submit
+### Steps to Reproduce
+1. Open `https://demoqa.com/automation-practice-form`
+2. Fill required fields with valid data
+3. Enter `invalid-email` in the email field
+4. Click Submit
 
-### Resultado Esperado
-Sistema deve bloquear envio e exibir mensagem de validacao.
+### Expected Result
+The system should block submission and display a validation message.
 
-### Resultado Atual
-Formulario e submetido sem validacao do formato de e-mail.
+### Actual Result
+The form is submitted without validating email format.
 
-### Evidencia
-Opcional: anexar screenshot/video/link de execucao.
+### Evidence
+Optional: attach screenshot/video/execution link.

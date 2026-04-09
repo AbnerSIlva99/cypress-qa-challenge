@@ -1,4 +1,4 @@
-﻿// Centralize heuristicas de seletores robustos.
-// Preferir data attributes e seletores estaveis.
+﻿// Centralize robust selector helpers.
+// Prefer stable data attributes whenever possible.
 
 export const byDataTest = (id) => `[data-testid="${id}"]`;

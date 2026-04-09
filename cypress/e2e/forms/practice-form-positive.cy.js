@@ -1,8 +1,8 @@
-﻿// Objetivo: cobrir fluxo principal de formulario com dados validos.
-// Nao incluir implementacao pronta aqui sem autoria.
+﻿// Goal: cover the main valid form submission flow.
+// Do not add ready-to-submit implementation code here.
 
 describe("Forms - Practice Form (Positive)", () => {
-  it("deve submeter com sucesso com campos obrigatorios validos", () => {
-    // TODO: implementar com POM e dados de fixture
+  it("should submit successfully with valid required fields", () => {
+    // TODO: implement using POM and fixture data
   });
 });

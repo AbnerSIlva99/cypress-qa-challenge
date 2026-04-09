@@ -1,11 +1,11 @@
-﻿// Objetivo: validar comportamento de inputs para dados validos e invalidos.
+﻿// Goal: validate input behavior for valid and invalid values.
 
-describe("Inputs - Validacao", () => {
-  it("deve aceitar valor valido", () => {
-    // TODO: implementar
+describe("Inputs - Validation", () => {
+  it("should accept a valid value", () => {
+    // TODO: implement
   });
 
-  it("deve tratar valor invalido", () => {
-    // TODO: implementar
+  it("should handle an invalid value", () => {
+    // TODO: implement
   });
 });

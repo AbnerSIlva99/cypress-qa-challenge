@@ -1,20 +1,20 @@
-﻿# Summary Report (Max 1 pagina)
+﻿# Summary Report (Max 1 page)
 
 ## Approach
-Descreva a estrategia adotada (ex.: risco, fluxos criticos, cobertura por prioridade).
+Describe the testing strategy used (for example: risk-based, critical flow coverage, priority-based scope).
 
 ## Design Decisions
-Explique decisoes como:
-- organizacao de specs
-- estrategia de seletores
-- uso de POM
-- estrategia de dados (fixtures e factories)
+Explain decisions such as:
+- spec organization
+- selector strategy
+- POM usage
+- data strategy (fixtures and factories)
 
 ## Trade-offs
-Liste o que foi priorizado e o que foi deixado para melhoria futura.
+List what was prioritized and what was postponed for future improvement.
 
 ## Challenges
-Descreva desafios tecnicos (ex.: estabilidade, comportamento assincrono, dados dinamicos).
+Describe technical challenges (for example: stability, asynchronous behavior, dynamic data).
 
 ## Observations
-Aponte possiveis pontos de flakiness, limitacoes e recomendacoes.
+Highlight potential flakiness points, known limitations, and recommendations.

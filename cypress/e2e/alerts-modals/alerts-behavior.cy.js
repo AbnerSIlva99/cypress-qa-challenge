@@ -1,11 +1,11 @@
-﻿// Objetivo: validar alertas (texto, confirmacao e prompt).
+﻿// Goal: validate alert behavior (text, accept, and cancel).
 
 describe("Alerts - Behavior", () => {
-  it("deve validar texto de alerta e acao de aceitar", () => {
-    // TODO: implementar
+  it("should validate alert text and accept action", () => {
+    // TODO: implement
   });
 
-  it("deve validar fluxo de cancelar quando aplicavel", () => {
-    // TODO: implementar
+  it("should validate cancel behavior when applicable", () => {
+    // TODO: implement
   });
 });

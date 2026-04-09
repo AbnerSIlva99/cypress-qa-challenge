@@ -2,8 +2,8 @@
 
 export class AlertsPage extends BasePage {
   selectors = {
-    // TODO: mapear seletores robustos
+    // TODO: map robust selectors
   };
 
-  // TODO: criar metodos para alerts e modals.
+  // TODO: add methods for alerts and modals.
 }

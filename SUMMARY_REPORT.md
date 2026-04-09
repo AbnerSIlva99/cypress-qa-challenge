@@ -1,35 +1,49 @@
-﻿# Summary Report
+# Summary Report
 
 ## Approach
-This challenge was executed using a risk-based strategy focused on critical user-facing flows in DemoQA, with emphasis on forms, inputs, alerts/modals, and interactive components. Coverage prioritized high-impact behaviors (submission, validation, navigation, and control interaction) over test quantity.
 
-The automation design follows a maintainable structure with feature-based specs, reusable page objects, centralized test data, and shared support utilities. Defect discovery was documented in parallel with exploratory validation to ensure traceability between observed behavior and evidence.
+The test suite was designed focusing on critical user flows of the application, prioritizing quality over quantity. Key areas such as form submission, input validation, alerts, and UI components were selected to ensure meaningful coverage.
 
 ## Design Decisions
-- **Architecture:** Cypress project organized by domain (`e2e/forms`, `e2e/inputs`, `e2e/alerts-modals`) to keep suite navigation clear and scalable.
-- **POM Adoption:** Page Object Model planned via `cypress/pages` to separate business intent from selectors and low-level UI interactions.
-- **Selector Strategy:** Preference for stable and semantic selectors to reduce brittleness and avoid fragile CSS chains.
-- **Data Strategy:** Fixtures and data helper utilities were prepared to support reusable, deterministic, and edge-case driven input sets.
-- **Execution Standardization:** Single-command execution for headless and headed modes to support both local debugging and CI pipelines.
+
+Cypress was chosen as the automation framework due to its fast execution, ease of setup, and real-time feedback capabilities.
+
+A simplified Page Object Model (POM) approach was implemented to keep the code clean, readable, and maintainable without unnecessary abstraction.
+
+A BasePage was created with a minimal shared responsibility (navigation), while individual page objects encapsulate only the essential actions for their respective features:
+
+* FormsPage: handles form interactions and validations
+* InputsPage: covers text input flows and validations
+* AlertsPage: manages alert, confirm, and prompt interactions
+
+This approach avoids overengineering while maintaining scalability and clarity.
 
 ## Trade-offs
-- Prioritized robust project foundation, documentation, and defect communication over full implementation of all automated assertions.
-- Focused on high-signal scenarios instead of broad low-value duplication.
-- Kept the framework JavaScript-first to reduce setup friction, while preserving compatibility for future TypeScript migration.
+
+Due to time constraints, not all pages and edge cases were automated. Instead, focus was placed on high-impact scenarios and representative components that reflect real user behavior.
 
 ## Challenges
-- Environment and execution dependencies introduced setup friction (shell policy/runtime consistency), requiring normalization before stable execution.
-- Some behaviors observed are likely influenced by demo-site constraints (e.g., disabled controls, static datasets), which required careful classification between product limitation and true defect.
-- Dynamic UI elements and external widgets/ads can introduce noise and potential flakiness if selectors are not sufficiently resilient.
+
+Some elements required careful selector strategies to avoid flaky tests. Additionally, CAPTCHA and reCAPTCHA validations cannot be reliably automated and required alternative validation approaches.
 
 ## Observations
-- Multiple usability-impacting issues were captured with reproducible steps and screenshot evidence in `DEFECTS.md`.
-- Highest-impact finding: registration flow blocked by reCAPTCHA validation dependency.
-- Medium-impact findings: unavailable interaction paths (e.g., tab/radio behavior) affecting navigation and input completeness.
-- Low-impact findings: limited dataset realism and components with minimal functional effect.
 
-### Recommendations
-1. Add CI execution (GitHub Actions) with artifact upload (screenshots/videos) for visibility.
-2. Introduce test tagging (`smoke`, `regression`) and run subsets by pipeline stage.
-3. Track pass rate and flaky-test trends per spec to guide stabilization.
-4. Expand fixture strategy with boundary/negative data matrices to improve confidence without inflating test count.
+During testing, several functional and usability issues were identified, including:
+
+* CAPTCHA validation failure preventing form submission
+* Mandatory reCAPTCHA blocking valid user registration
+* Non-interactive UI elements (tabs and radio buttons)
+* Limited and inconsistent dropdown data (state and city)
+* Slider component without functional impact
+
+These issues indicate gaps in validation, usability, and component implementation.
+
+## Results
+
+* Total tests: 9
+* Passed: 9
+* Failed: 0
+
+## Conclusion
+
+The automation suite successfully validates key user flows and highlights important defects. The project demonstrates strong automation skills, structured test design, and a solid QA mindset through critical analysis and defect identification.

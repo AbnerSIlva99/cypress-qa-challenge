@@ -79,7 +79,7 @@ Screenshot file: **tabs-more-not-clickable.png**
 ### Notes:
 
 The tab appears to be disabled in the DOM (aria-disabled="true"), which may indicate incomplete implementation.
-## 4. State and City dropdowns have limited and inconsistent options
+## 3. State and City dropdowns have limited and inconsistent options
 
 ### Steps to Reproduce:
 
@@ -119,7 +119,7 @@ Screenshot file: **state-city-limited-options.png**
 ### Notes:
 
 The dataset appears to be static and incomplete, which may indicate a demo limitation or lack of scalability in the form design.
-## 5. Slider value change does not trigger any functional behavior
+## 4. Slider value change does not trigger any functional behavior
 
 ### Steps to Reproduce:
 

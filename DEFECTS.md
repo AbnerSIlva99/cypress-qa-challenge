@@ -156,4 +156,41 @@ Screenshot file: **slider-no-functional-impact.png**
 ### Notes:
 
 The slider appears to be implemented only for demonstration purposes and lacks integration with any functional behavior.
+## 6. "No" radio button is not selectable
+
+### Steps to Reproduce:
+
+1. Navigate to https://demoqa.com/radio-button
+2. Locate the question "Do you like the site?"
+3. Attempt to select the "No" radio button
+
+### Expected Result:
+
+The user should be able to select all available radio options ("Yes", "Impressive", and "No").
+
+### Actual Result:
+
+The "No" radio button cannot be selected. It appears disabled or unresponsive to user interaction.
+
+### Severity:
+
+Medium
+
+### Priority:
+
+Medium
+
+### Impact:
+
+This restricts user input and prevents full interaction with the form, limiting test coverage and reducing usability.
+
+### Evidence:
+
+Screenshot file: **radio-button-not-selectable.png**
+
+![Radio Button Issue](./screenshots/radio-button-not-selectable.png)
+
+### Notes:
+
+The radio button appears to be intentionally disabled (possibly for demonstration), but this behavior is not clearly communicated to the user.
 

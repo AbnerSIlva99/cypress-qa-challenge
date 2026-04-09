@@ -119,4 +119,41 @@ Screenshot file: **state-city-limited-options.png**
 ### Notes:
 
 The dataset appears to be static and incomplete, which may indicate a demo limitation or lack of scalability in the form design.
+## 5. Slider value change does not trigger any functional behavior
+
+### Steps to Reproduce:
+
+1. Navigate to https://demoqa.com/slider
+2. Move the slider to different positions (e.g., from 0 to 100)
+3. Observe the behavior of the application
+
+### Expected Result:
+
+Changing the slider value should trigger a visible or functional change in the application (e.g., updating related data, triggering an action, or affecting UI behavior).
+
+### Actual Result:
+
+The slider value changes numerically, but no functional or visual impact is observed in the application.
+
+### Severity:
+
+Low
+
+### Priority:
+
+Low
+
+### Impact:
+
+This may confuse users, as the component appears interactive but does not provide meaningful functionality, reducing overall usability.
+
+### Evidence:
+
+Screenshot file: **slider-no-functional-impact.png**
+
+![Slider Issue](./screenshots/slider-no-functional-impact.png)
+
+### Notes:
+
+The slider appears to be implemented only for demonstration purposes and lacks integration with any functional behavior.
 

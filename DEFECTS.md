@@ -79,4 +79,44 @@ Screenshot file: **tabs-more-not-clickable.png**
 ### Notes:
 
 The tab appears to be disabled in the DOM (aria-disabled="true"), which may indicate incomplete implementation.
+## 4. State and City dropdowns have limited and inconsistent options
+
+### Steps to Reproduce:
+
+1. Navigate to https://demoqa.com/automation-practice-form
+2. Scroll to the "State and City" section
+3. Click on the "State" dropdown
+4. Observe available options
+5. Select a state and then click on the "City" dropdown
+
+### Expected Result:
+
+The dropdowns should provide a comprehensive and consistent list of states and corresponding cities, allowing realistic user selection.
+
+### Actual Result:
+
+The "State" dropdown contains only a few limited options (for example: NCR, Uttar Pradesh, Haryana, Rajasthan).
+The "City" dropdown is also restricted and depends on these limited selections.
+
+### Severity:
+
+Low
+
+### Priority:
+
+Medium
+
+### Impact:
+
+This limits the usability and realism of the form, making it unsuitable for broader user scenarios and reducing test coverage for location-based inputs.
+
+### Evidence:
+
+Screenshot file: **state-city-limited-options.png**
+
+![State/City Issue](./screenshots/state-city-limited-options.png)
+
+### Notes:
+
+The dataset appears to be static and incomplete, which may indicate a demo limitation or lack of scalability in the form design.
 
